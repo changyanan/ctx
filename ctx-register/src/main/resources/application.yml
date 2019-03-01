@@ -1,0 +1,13 @@
+
+server:
+  port: 3003
+  address: 127.0.0.1
+spring:
+  application:
+    name: ctx-register
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://${server.address}:${server.port}/eureka/
