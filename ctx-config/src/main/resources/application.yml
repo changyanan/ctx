@@ -1,0 +1,13 @@
+server:
+  port: 3001
+spring:
+  application:
+    name: ctx-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/changyanan/ctx
+          search-paths: ctx-config-repo
+          username: 824046877@qq.com
+          password: a3138819
